@@ -1,133 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <title>Gestão de Produtos</title>
 </head>
+
 <body>
     <b>Gestão de Produtos:</b>
-        <form method="post">
+    <form method="post">
         <table border="0">
 
-    <tr>
-    <td rowspan="2" ><center><img src="c.png" height="90" width="160"></C></center></td>
-    </tr>
-    <tr>
-    <td><center>Cadastro de Produtos:</center></td>
-    </tr>
+            <tr>
+                <td rowspan="2">
+                    <center><img src="c.png" height="90" width="160"></C>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>Cadastro de Produtos:</center>
+                </td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual o Nome do Remédio?</td>
-    </tr>
-    <tr>
-        <td><input type="text" name="Nome_Produto"></td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual o Nome do Remédio?</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Nome_Produto"></td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual o Tipo do Remédio?</td>
-    </tr>
-    <tr>
-        <td>
-        <select name="Tipo_Remedio">
-            <option>Comprimido</option>    
-            <option>Líquido</option>
-            <option>Inalatória</option>
-            <option>Injetavel</option>
-            <option>Creme</option>
-        </select>
-        </td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual o Tipo do Remédio?</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="Tipo_Remedio">
+                        <option>Comprimido</option>
+                        <option>Líquido</option>
+                        <option>Inalatória</option>
+                        <option>Injetavel</option>
+                        <option>Creme</option>
+                    </select>
+                </td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual a Quantidade Enviada? (Caixas)</td>
-    </tr>
-    <tr>
-        <td><input type="number" name="Qntd_Enviada"></td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual a Quantidade Enviada? (Caixas)</td>
+            </tr>
+            <tr>
+                <td><input type="number" name="Qntd_Enviada"></td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual a Validade do Remédio?</td>
-    </tr>
-    <tr>
-        <td><input type="date" name="Validade"></td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual a Validade do Remédio?</td>
+            </tr>
+            <tr>
+                <td><input type="date" name="Validade"></td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual foi a Data da Fabricação?</td>
-    </tr>
-    <tr>
-        <td><input type="date" name="Data_Fabricacao"></td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual foi a Data da Fabricação?</td>
+            </tr>
+            <tr>
+                <td><input type="date" name="Data_Fabricacao"></td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual o Lote do Remédio?</td>
-    </tr>
-    <tr>
-        <td><input type="text" name="Lote"></td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual o Lote do Remédio?</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Lote"></td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual o Nome do Fornecedor?</td>
-    </tr>
-    <tr>
-        <td><input type="text" name="Nome_Fornecedor"></td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual o Nome do Fornecedor?</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Nome_Fornecedor"></td>
+            </tr>
 
-    <tr>
-        <td rowspan="2">Qual a Quantidade em Estoque? (Caixas)</td>
-    </tr>
-    <tr>
-    <td><input type="number" name="Qntd_Estoque"></td>
-    </tr>
+            <tr>
+                <td rowspan="2">Qual a Quantidade em Estoque? (Caixas)</td>
+            </tr>
+            <tr>
+                <td><input type="number" name="Qntd_Estoque"></td>
+            </tr>
 
-</table>
-</form>
+        </table>
+    </form>
 </body>
 </html>
-
-<!--Código Antigo:
-<html lang="pt-BR">
-<body>
-<b>Gestão de Produtos:</b>
-<br/>
-<br/>
-<form method="Post">
-    Qual o Nome do Remédio?
-    <input type="text" name="Nome_Produto">
-</form>
-<form method="Post">
-    Qual o Tipo do Remédio?
-    <select name="Tipo_Remedio">
-        <option>Comprimido</option>    
-        <option>Líquido</option>
-        <option>Inalatória</option>
-        <Option>Injetavel</Option>
-        <Option>Creme</Option>
-    </select> 
-</form>
-<form method="Post">
-    Qual a Quantidade Enviada?(Caixas)
-    <input type="number" name="Qntd_Enviada">
-</form>
-<form method="Post">
-    Qual a Validade do Remédio?
-    <input type="date" name="Validade">
-</form>
-<form method="Post">
-    Qual foi a Data da Fabricação?
-    <input type="date" name="Data_Fabricacao">
-</form>
-<form method="Post">
-    Qual o Lote do Remédio?
-    <input type="text" name="Lote">
-</form>
-<form method="Post">
-    Qual o Nome do fornecedor?
-    <input type="text" name="Nome_Fornecedor">
-</form>
-<form method="Post">
-    Qual a Quantidade em Estoque?(Caixas)
-    <input type="number" name="Qntd_Estoque">
-</form>
-</body>
-</html>
--->
