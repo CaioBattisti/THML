@@ -1,46 +1,41 @@
 <!DOCTYPE html>
-<html xmlns="pt-br">
-<link rel="stylesheey" type="text" href="ESTILO.CSS" media="all">
-
-</html>
-
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <title>Cadastro Fornecedor</title>
+    <link rel="stylesheet" type="text/css" href="ESTILO.CSS" media="all">
     <style>
         li {
             float: left;
         }
-
         li a,
         .dropbtn {
             display: inline-block;
             text-decoration: none;
         }
-
         li.dropdown {
             display: inline-block;
         }
     </style>
 </head>
-
 <body>
-    <table>
+    <table align="center">
         <tr>
             <td><img src="C.png" height="50" /></td>
-            <td colspan=2>Cadastro Fornecedor</td>
+            <td colspan="2">Cadastro Fornecedor</td>
         </tr>
-        <tr>
-        </tr>
+        <tr></tr>
         <tr>
             <td>ID:</td>
             <td><input type="text" id="ID" name="ID" required></td>
         </tr>
         <tr>
             <td>Nome Fornecedor:</td>
-            <td><input type="text" id="Nome Fornecedor" name="Nome Fornecedor" required></td>
+            <td><input type="text" id="NomeFornecedor" name="NomeFornecedor" required></td>
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input type="text" id="Email" name="Email" required></td>
+            <td><input type="email" id="Email" name="Email" required></td>
         </tr>
         <tr>
             <td>Telefone:</td>
@@ -55,15 +50,21 @@
             <td><input type="text" id="Transporte" name="Transporte" required></td>
         </tr>
         <tr>
-            <td>Inicio Contrato:</td>
-            <td><input type="text" id="Inicio Contrato" name="Inicio Contrato" required></td>
+            <td>Início Contrato:</td>
+            <td><input type="text" id="InicioContrato" name="InicioContrato" required></td>
+        </tr>
         <tr>
             <td>Final Contrato:</td>
-            <td><input type="text" id="Final Contrato" name="Final Contrato" required></td>
+            <td><input type="text" id="FinalContrato" name="FinalContrato" required></td>
         </tr>
         <tr>
             <td><button type="submit">Cadastrar</button></td>
-            <td><a href="SA_TelaPrincipal.HTML"><button>Voltar</button></a></td>
+            <td>
+                <a href="SA_TelaPrincipal.HTML">
+                    <button type="button">Voltar</button>
+                </a>
+            </td>
         </tr>
     </table>
 </body>
+</html>
