@@ -4,6 +4,21 @@
 <head>
     <title>Gestão de Produtos</title>
     <link rel="stylesheet" type="text/css" href="SAVisual.CSS" media="all">
+    <style>
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,8 +28,7 @@
 
             <tr>
                 <td rowspan="2">
-                    <center><img src="c.png" height="90" width="160"></C>
-                    </center>
+                    <center><img src="c.png" height="90" width="160"></center>
                 </td>
             </tr>
             <tr>
@@ -87,7 +101,14 @@
                 <td><input type="number" name="Qntd_Estoque"></td>
             </tr>
 
+            <tr>
+                <td>
+                    <button type="button" onclick="window.location.href='SA_TelaPrincipal.HTML'">Voltar</button>
+                </td>
+            </tr>
+
         </table>
     </form>
 </body>
+
 </html>
