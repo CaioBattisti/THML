@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+
 <head>
-    <style>
-        li {
-            float: left;
-        }
-
-        li a,
-        .dropbtn {
-            display: inline-block;
-            text-decoration: none;
-        }
-
-        li.dropdown {
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
 </head>
+
 <body>
     <form method="post" action="/cgi-bin/post-query" align="center">
         <div id="tudo">
             <div class="topo">
-                <header class="topo_header"
+                <header class="topo_header">
                     <hgroup>
                         <h1>Abaixo insira as informações sobre seu/sua funcionario/a:</h1>
                     </hgroup>
                 </header>
             </div>
-            <br/>
-            <br/>
-            <table align=center>
+            <br />
+            <br />
             <div class="principal">
                 <main>
                     <section>
-                <tr>
-                    <td rowspan="2"><img src="C.png" width="200" height="120"></td>
-                    <th>Cadastro</th>
-                </tr>
-                <tr>
-                    <th>Funcionario</th>
-                </tr>
-                <tr>
-                    <td>Nome:</td>
-                    <td><input type="text" name="nome_funcionario"></td>
-                </tr>
-                <tr>
-                    <td>CPF:</td>
-                    <td><input type="text" name="cpf" maxlength="15"></td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="text" name="email_funcionario"></td>
-                </tr>
-                <tr>
-                    <td>Função:</td>
-                    <td><input type="text" name="funcao"></td>
-                </tr>
-                <tr>
-                    <td>Quantidade de Vendas:</th>
-                    <td><input type="number" name="quantidade_vendas"></td>
-                </tr>
-                <tr>
-                    <td>Salario:</td>
-                    <td><input type="number" name="salario"></td>
-                </tr>
-                <tr>
-                    <td>Inicio Contratual:</td>
-                    <td><input type="date" name="inicio_contrato"></td>
-                    </tr>
-                    <tr>
-                        <td><a href="SA_TelaPrincipal.HTML"><button>Voltar</button></a></td>
-                    </tr>
-                </table>
+                        <table align="center">
+                            <tr>
+                                <td rowspan="2"><img src="C.png" width="200" height="120"></td>
+                                <th>Cadastro</th>
+                            </tr>
+                            <tr>
+                                <th>Funcionario</th>
+                            </tr>
+                            <tr>
+                                <td>Nome:</td>
+                                <td><input type="text" name="nome_funcionario"></td>
+                            </tr>
+                            <tr>
+                                <td>CPF:</td>
+                                <td><input type="text" name="cpf" maxlength="15"></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="text" name="email_funcionario"></td>
+                            </tr>
+                            <tr>
+                                <td>Função:</td>
+                                <td><input type="text" name="funcao"></td>
+                            </tr>
+                            <tr>
+                                <td>Quantidade de Vendas:</td>
+                                <td><input type="number" name="quantidade_vendas"></td>
+                            </tr>
+                            <tr>
+                                <td>Salario:</td>
+                                <td><input type="number" name="salario"></td>
+                            </tr>
+                            <tr>
+                                <td>Inicio Contratual:</td>
+                                <td><input type="date" name="inicio_contrato"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="button"
+                                        onclick="window.location.href='SA_TelaPrincipal.HTML'">Voltar</button>
+                                </td>
+                            </tr>
+                        </table>
                     </section>
                 </main>
             </div>
         </div>
     </form>
 </body>
+
 </html>

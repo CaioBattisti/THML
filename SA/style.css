@@ -1,69 +1,110 @@
-style
-    p{
-        color:white;
-        text-align:center;
-        font-family:'Arial Narrow';
-        font-size:15pt;
-        font-weight:bold;
+style p {
+    color: white;
+    text-align: center;
+    font-family: 'Arial Narrow';
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .clear {
+        clear: both
     }
-    *,*:before,*:after{
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    .clear{clear:both}
-    }
-    body{
+}
+
+body {
     font: 19px/1.4 arial, sans-serif;
     color: #333;
-    }
-    #tudo{
+}
+
+#tudo {
     width: 100%;
     max-width: 1200px;
     min-width: 860px;
     margin: 0 auto;
     background: crimson
-    }
-    h1,h2,h3,h4,h5,h6{
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #036;
-    }
-    .topo_header{
+}
+
+.topo_header {
     background: crimson;
     padding: 5px 20px;
-    }
-    .topo_header h1{
-    font-size:36px;
+}
+
+.topo_header h1 {
+    font-size: 36px;
     margin: 4px 0 2px 0
-    }
-    .topo_header a{
+}
+
+.topo_header a {
     color: #fff;
     text-decoration: nome;
-    }
-    .topo_header h2{
+}
+
+.topo_header h2 {
     font-size: 20px;
     margin: 2px 0 4px 0;
     color: #fff
-    }
-    .principal{
-    width:100%;
-    padding:20px 15px;
-    background-color:crimson
-    }
-    .rodape{
+}
+
+.principal {
+    width: 100%;
+    padding: 20px 15px;
+    background-color: crimson
+}
+
+.rodape {
     background: crimson;
     color: #fff;
     padding: 5px 0;
-    text-align:center;
+    text-align: center;
+}
+
+pre {
+    font-size: 14px
+}
+
+@media(max-width:1040px) {
+    pre {
+        font-size: 12px
     }
-    pre{font-size:14px}
-    @media(max-width:1040px){
-    pre{font-size:12px}
-    }
-    td{
-        text-align:left;
-        background-color:purple;
-        color:white;
-    }
-    th{
-        background-color:purple;
-        color:white
-    }
+}
+
+td {
+    text-align: left;
+    background-color: purple;
+    color: white;
+}
+
+th {
+    background-color: purple;
+    color: white
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
