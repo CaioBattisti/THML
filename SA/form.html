@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="pt-BR">
     <link rel="stylesheet" type="text/css" href="style.css" media="all">
+<head>
+    <style>
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <form method="post" action="/cgi-bin/post-query" align="center">
@@ -56,6 +68,9 @@
                 <tr>
                     <td>Inicio Contratual:</td>
                     <td><input type="date" name="inicio_contrato"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="SA_TelaPrincipal.HTML"><button>Voltar</button></a></td>
                     </tr>
                 </table>
                     </section>
