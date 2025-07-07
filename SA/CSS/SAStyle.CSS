@@ -1,110 +1,127 @@
-style p {
-    color: white;
-    text-align: center;
-    font-family: 'Arial Narrow';
-    font-size: 15pt;
-    font-weight: bold;
-}
-
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+/* Reset básico para margem e padding */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
-    .clear {
-        clear: both
-    }
 }
 
+/* Corpo da página */
 body {
-    font: 19px/1.4 arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f5f9fc;
     color: #333;
+    padding: 20px;
 }
 
-#tudo {
-    width: 100%;
-    max-width: 1200px;
-    min-width: 860px;
-    margin: 0 auto;
-    background: crimson
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #036;
-}
-
-.topo_header {
-    background: crimson;
-    padding: 5px 20px;
-}
-
+/* Cabeçalho do formulário */
 .topo_header h1 {
-    font-size: 36px;
-    margin: 4px 0 2px 0
-}
-
-.topo_header a {
-    color: #fff;
-    text-decoration: nome;
-}
-
-.topo_header h2 {
-    font-size: 20px;
-    margin: 2px 0 4px 0;
-    color: #fff
-}
-
-.principal {
-    width: 100%;
-    padding: 20px 15px;
-    background-color: crimson
-}
-
-.rodape {
-    background: crimson;
-    color: #fff;
-    padding: 5px 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #004080;
     text-align: center;
 }
 
-pre {
-    font-size: 14px
+/* Formulário */
+form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 480px;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-@media(max-width:1040px) {
-    pre {
-        font-size: 12px
-    }
+/* Tabela do formulário */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espaçamento entre linhas */
 }
 
-td {
-    text-align: left;
-    background-color: purple;
-    color: white;
+/* Célula da imagem */
+td[rowspan="2"] {
+    vertical-align: middle;
+    padding-right: 15px;
+    width: 45%;
 }
 
+/* Centralizar imagem */
+td[rowspan="2"] > img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Cabeçalho da tabela */
 th {
-    background-color: purple;
-    color: white
+    color: #004080;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-li {
-    float: left;
+/* Células dos labels */
+td:not([rowspan]) {
+    width: 55%;
+    font-weight: bold;
+    color: #004080;
+    padding-left: 10px;
+    vertical-align: middle;
 }
 
-li a,
-.dropbtn {
-    display: inline-block;
+/* Inputs */
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #0066cc;
+    outline: none;
+    background-color: #e6f0ff;
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0066cc;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004a99;
+}
+
+/* Botão Voltar dentro do link */
+a {
     text-decoration: none;
 }
 
-li.dropdown {
-    display: inline-block;
+a button {
+    background-color: #999999;
+}
+
+a button:hover {
+    background-color: #666666;
+}
+
+/* Alinhamento e espaçamento das células */
+td, th {
+    padding: 8px 10px;
 }
