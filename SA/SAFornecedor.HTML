@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastro Fornecedor</title>
     <link rel="stylesheet" type="text/css" href="CSS/SAEstilo.CSS" media="all">
-    <script src="Mascaras/FornecedorMascara.js"></script>
+
+    <!-- Importa o arquivo JS externo -->
+    <script src="Mascaras/FornecedorMascara.js" defer></script>
+
     <style>
-        li { float: left; }
-        li a, .dropbtn {
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
             display: inline-block;
             text-decoration: none;
         }
-        li.dropdown { display: inline-block; }
+
+        li.dropdown {
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -22,6 +33,7 @@
                 <td><img src="Image/C.png" height="50" /></td>
                 <td colspan="2">Cadastro Fornecedor</td>
             </tr>
+            <tr></tr>
             <tr>
                 <td>ID:</td>
                 <td><input type="text" id="ID" name="ID" required></td>
@@ -36,7 +48,7 @@
             </tr>
             <tr>
                 <td>Telefone:</td>
-                <td><input type="text" id="Telefone" name="Telefone" maxlength="15" oninput="mascara(this, Telefone)" required></td>
+                <td><input type="text" id="Telefone" name="Telefone" maxlength="15" placeholder="(99) 99999-9999" oninput="mascara(this, telefone)" required></td>
             </tr>
             <tr>
                 <td>Produto:</td>
@@ -65,4 +77,5 @@
         </table>
     </form>
 </body>
+
 </html>
