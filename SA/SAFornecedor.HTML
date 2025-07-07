@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Cadastro Fornecedor</title>
     <link rel="stylesheet" type="text/css" href="CSS/SAEstilo.CSS" media="all">
+    <script src="Mascaras/FornecedorMascara.js"></script>
     <style>
         li {
             float: left;
@@ -23,54 +24,55 @@
 </head>
 
 <body>
-    <table align="center">
-        <tr>
-            <td><img src="Image/C.png" height="50" /></td>
-            <td colspan="2">Cadastro Fornecedor</td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td>ID:</td>
-            <td><input type="text" id="ID" name="ID" required></td>
-        </tr>
-        <tr>
-            <td>Nome Fornecedor:</td>
-            <td><input type="text" id="NomeFornecedor" name="NomeFornecedor" required></td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td><input type="email" id="Email" name="Email" required></td>
-        </tr>
-        <tr>
-            <td>Telefone:</td>
-            <td><input type="text" id="Telefone" name="Telefone" required></td>
-        </tr>
-        <tr>
-            <td>Produto:</td>
-            <td><input type="text" id="Produto" name="Produto" required></td>
-        </tr>
-        <tr>
-            <td>Transporte:</td>
-            <td><input type="text" id="Transporte" name="Transporte" required></td>
-        </tr>
-        <tr>
-            <td>Data de Inicio de Contrato:</td>
-            <td><input type="date" id="InicioContrato" name="InicioContrato" required></td>
-        </tr>
-        <tr>
-            <td>Data de Final de Contrato:</td>
-            <td><input type="date" id="FinalContrato" name="FinalContrato" required></td>
-        </tr>
-
-        <tr>
-            <td><button type="submit">Cadastrar</button></td>
-            <td>
-                <a href="SA_TelaPrincipal.HTML">
-                    <button type="button">Voltar</button>
-                </a>
-            </td>
-        </tr>
-    </table>
+    <form method="post" action="/cgi-bin/post-query" onsubmit="return validarEmail()">
+        <table align="center">
+            <tr>
+                <td><img src="Image/C.png" height="50" /></td>
+                <td colspan="2">Cadastro Fornecedor</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>ID:</td>
+                <td><input type="text" id="ID" name="ID" required></td>
+            </tr>
+            <tr>
+                <td>Nome Fornecedor:</td>
+                <td><input type="text" id="NomeFornecedor" name="NomeFornecedor" onkeypress="mascara(this, ApenasLetras)" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="Email" name="Email" placeholder="exemplo@gmail.com" onkeypress="mascara(this, EmailMascara)" required></td>
+            </tr>
+            <tr>
+                <td>Telefone:</td>
+                <td><input type="text" id="Telefone" name="Telefone" maxlength="15" onkeypress="mascara(this, Telefone)" required></td>
+            </tr>
+            <tr>
+                <td>Produto:</td>
+                <td><input type="text" id="Produto" name="Produto" onkeypress="mascara(this, ApenasLetras)" required></td>
+            </tr>
+            <tr>
+                <td>Transporte:</td>
+                <td><input type="text" id="Transporte" name="Transporte" onkeypress="mascara(this, ApenasLetras)" required></td>
+            </tr>
+            <tr>
+                <td>Data de Início de Contrato:</td>
+                <td><input type="date" id="InicioContrato" name="InicioContrato" required></td>
+            </tr>
+            <tr>
+                <td>Data de Final de Contrato:</td>
+                <td><input type="date" id="FinalContrato" name="FinalContrato" required></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Cadastrar</button></td>
+                <td>
+                    <a href="SA_TelaPrincipal.HTML">
+                        <button type="button">Voltar</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 
 </html>
