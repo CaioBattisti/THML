@@ -18,17 +18,17 @@ body {
     font-size: 24px;
     margin-bottom: 20px;
     color: #004080;
-    text-align: center;
 }
 
-/* Formulário */
+/* Formulário alinhado à esquerda */
 form {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 20px 30px;
     border-radius: 8px;
     max-width: 480px;
-    margin: 0 auto;
+    /* Retira centralização */
+    margin: 0;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
@@ -46,7 +46,7 @@ td[rowspan="2"] {
     width: 45%;
 }
 
-/* Centralizar imagem */
+/* Centralizar imagem na célula */
 td[rowspan="2"] > img {
     display: block;
     margin: 0 auto;
