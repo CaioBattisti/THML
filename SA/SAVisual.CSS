@@ -3,3 +3,11 @@ td {
     font-weight: bold;
     font-style: italic;
 }
+table {
+    color:white;
+    background-color: yellowgreen;
+    text-align: center;
+    font-family: Arial Narrow;
+    font-size: 15pt;
+    font-weight: bold;
+}
