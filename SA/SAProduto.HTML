@@ -19,6 +19,9 @@
             display: inline-block;
         }
     </style>
+
+    <!-- Importa o arquivo JS das máscaras -->
+    <script src="Mascaras/ProdutoMascara.js"></script>
 </head>
 
 <body>
@@ -41,51 +44,49 @@
                 <td rowspan="2">Qual o Nome do Remédio?</td>
             </tr>
             <tr>
-                <td><input type="text" name="Nome_Produto"></td>
+                <td><input type="text" name="Nome_Produto" onkeypress="mascara(this, ApenasLetras)" required></td>
             </tr>
 
             <tr>
                 <td rowspan="2">Qual a Quantidade Enviada? (Caixas)</td>
             </tr>
             <tr>
-                <td><input type="number" name="Qntd_Enviada"></td>
+                <td><input type="number" name="Qntd_Enviada" min="1" max="9999" required></td>
             </tr>
 
             <tr>
                 <td rowspan="2">Qual a Quantidade em Estoque? (Caixas)</td>
             </tr>
             <tr>
-                <td><input type="number" name="Qntd_Estoque"></td>
+                <td><input type="number" name="Qntd_Estoque" min="0" max="9999" required></td>
             </tr>
 
             <tr>
                 <td rowspan="2">Qual o Nome do Fornecedor?</td>
             </tr>
             <tr>
-                <td><input type="text" name="Nome_Fornecedor"></td>
+                <td><input type="text" name="Nome_Fornecedor" onkeypress="mascara(this, ApenasLetras)" required></td>
             </tr>
 
             <tr>
                 <td rowspan="2">Qual o Lote do Remédio?</td>
             </tr>
             <tr>
-                <td><input type="text" name="Lote"></td>
+                <td><input type="text" name="Lote" maxlength="8" onkeypress="mascara(this, Lote)" required></td>
             </tr>
-
-            <tr>
 
             <tr>
                 <td rowspan="2">Qual a Validade do Remédio?</td>
             </tr>
             <tr>
-                <td><input type="date" name="Validade"></td>
+                <td><input type="date" name="Validade" required></td>
             </tr>
 
             <tr>
                 <td rowspan="2">Qual foi a Data da Fabricação?</td>
             </tr>
             <tr>
-                <td><input type="date" name="Data_Fabricacao"></td>
+                <td><input type="date" name="Data_Fabricacao" required></td>
             </tr>
 
             <tr>
@@ -93,7 +94,7 @@
             </tr>
             <tr>
                 <td>
-                    <select name="Tipo_Remedio">
+                    <select name="Tipo_Remedio" required>
                         <option>Comprimido</option>
                         <option>Líquido</option>
                         <option>Inalatória</option>
