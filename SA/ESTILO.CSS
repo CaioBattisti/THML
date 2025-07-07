@@ -1,13 +1,14 @@
-table{
-    color:white;
+table {
+    color: white;
     background-color: blue;
     text-align: center;
     font-family: Arial Narrow;
     font-size: 15pt;
     font-weight: bold;
 }
-body{
-    color:white;
+
+body {
+    color: white;
     background-color: paleturquoise;
     text-align: center;
     font-family: Arial Narrow;

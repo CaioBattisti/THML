@@ -3,8 +3,9 @@ td {
     font-weight: bold;
     font-style: italic;
 }
+
 table {
-    color:white;
+    color: white;
     background-color: yellowgreen;
     text-align: center;
     font-family: Arial Narrow;
